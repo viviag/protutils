@@ -1,0 +1,32 @@
+name:                rescore-vina
+version:             0.1
+synopsis:            Tool to rescore vina results with rf-score-vs and report on it.
+description:         Please see README.md
+homepage:            https://github.com/viviag/protutils#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Vit Guzeev
+maintainer:          viviag@yandex.ru
+copyright:           2017 Vitalii Guzeev
+category:            Science
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+executable rescore-vina
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , rescore-vina
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/protutils
