@@ -1,0 +1,12 @@
+resolver: lts-9.14
+
+packages:
+- 'anychem2dock'
+- 'vina-utils'
+- 'rescore-vina'
+
+extra-deps: []
+
+# Extra package databases containing global packages
+# FIXME: use it.
+extra-package-dbs: []
