@@ -1,0 +1,631 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 10:06:38.32723 UTC
+
+interface main@main:Main 8002
+  interface hash: 3d02e5a7fe9a03f22f7810bb8b449202
+  ABI hash: 13ce2fce2dfa1c4d648b42601f0e17f4
+  export-list hash: 34ef18c7089bb1291b2fa468ca4704d8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5301c998c93e892c592c536c5ae24a09
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.parser
+  Main.welcome
+module dependencies:
+package dependencies: StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-A79v826bgPr574HtaZPPqC
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA
+                      comonad-5.0.2@comonad-5.0.2-Fq9Xy9jdx6uIyJZn00E6Yc
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.3@distributive-0.5.3-IX4kyVcHAyoH4uFYrsjY1R
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foldl-1.2.5@foldl-1.2.5-LTJzncyDtt12inxryey5oH
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      hostname-1.0@hostname-1.0-LHxcvBDHWay1RGMj1Uzenf
+                      integer-gmp-1.0.0.1
+                      managed-1.0.5@managed-1.0.5-83xU3i5xYzoBicHocI7GYo
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy
+                      optional-args-1.0.1@optional-args-1.0.1-5AJ5OjRkffb7RAwPRPUJYx
+                      optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-EqIYOWOFTvf23sT5QTYn9U
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      profunctors-5.2.1@profunctors-5.2.1-Ga89Nyw0d7LBEIoX4AZ6gT
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      system-fileio-0.3.16.3@system-fileio-0.3.16.3-2uiN1L7WHZw4YOfr010ZH3
+                      system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      temporary-1.2.1.1@temporary-1.2.1.1-3IR8tQl7JQAGlaxIVThFvk
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      turtle-1.3.6@turtle-1.3.6-3xumYV3mexpGEJIcB9MiRl
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path
+         system-filepath-0.4.13.4@system-filepath-0.4.13.4-1Onr71muBMoJ4AF6FUpTVo:Filesystem.Path.CurrentOS
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-KcF2f75KyQm5BjgJ8WkHCw:Data.Bifunctor.Tannen
+                         clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         mwc-random-0.13.6.0@mwc-random-0.13.6.0-FYg9HqO0pqB8vcniiPVzVy:System.Random.MWC
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  directory-1.3.0.0@directory-1.3.0.0:System.Directory 8ff5ebd6a93811413df021d2be39a158
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-EqIYOWOFTvf23sT5QTYn9U:Options.Applicative.Types 51a5ed351e52971e6533467cf30252fe
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text e8aa34be3dde178f567ae461e65c988b
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show 516b88f1e0e0dbed91cb925542602306
+import  -/  turtle-1.3.6@turtle-1.3.6-3xumYV3mexpGEJIcB9MiRl:Turtle dc2e84ebba872698bfb16a14ca03db3d
+import  -/  turtle-1.3.6@turtle-1.3.6-3xumYV3mexpGEJIcB9MiRl:Turtle.Options be52a5865e54fc492a55c2f2ce54ac49
+import  -/  turtle-1.3.6@turtle-1.3.6-3xumYV3mexpGEJIcB9MiRl:Turtle.Prelude c2c5a0f36835213556159751123b3fc2
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+d9c0dee8a685c5ed422401aaa63f23bf
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+01d62c2c484918d4b5d94b688c90c90e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+129a1a814fa667791781f32a098e848d
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+04ae75f7f0f98c2a72bc101926d2e217
+  parser ::
+    Options.Applicative.Types.Parser
+      (Data.Text.Internal.Text, Data.Text.Internal.Text,
+       GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+       GHC.Types.Double, GHC.Types.Double, GHC.Types.Double)
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                      GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                      GHC.Types.Double, GHC.Types.Double, GHC.Types.Double)
+                   @ GHC.Types.Double
+                   Main.parser6
+                   Main.parser1) -}
+1bc163aa5a9759c3363e4eb2a858dbc7
+  parser1 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser5 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser4
+                        Main.parser2 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+013a51249b27be17bdbdbbce090207a1
+  parser10 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "size_y"#) -}
+af99e6d48e28da77719c030ff73b74bc
+  parser11 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ GHC.Types.Double
+                   Main.parser16
+                   Main.parser12) -}
+a34042a95abc3728efa2cdd4365f7534
+  parser12 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser15 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser4
+                        Main.parser13 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+f25164d3f31796649c777d967a9931ce
+  parser13 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser14 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+bc2189f2879c28ed6e7d789de40c07a0
+  parser14 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "X radius of searching area"#) -}
+e8c649e83fada676940b33e28eeb02e2
+  parser15 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "size_x"#) -}
+57196e8a6d049b211a23aff56446b480
+  parser16 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ GHC.Types.Double
+                   Main.parser22
+                   Main.parser17) -}
+14a33cf08070b99e80d9fbd1a64fad8a
+  parser17 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser21 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser20
+                        Main.parser18 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+22d8bd2f47eda7215b1b39b7413fb6af
+  parser18 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser19 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+99077ec1ebfaec652fa733b4b4476cf7
+  parser19 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Z coord of assumed site area center"#) -}
+2b0174aa6199991fe7ef4457aa86ada3
+  parser2 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser3 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+b27f9eed1ea8fb5db6fd97b21bf3317a
+  parser20 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'z'#) -}
+0fd206a6331ae89edee906e8b2591a39
+  parser21 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "center_z"#) -}
+a06c2e069c796301a3ffd0c2d94907de
+  parser22 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ GHC.Types.Double
+                   Main.parser28
+                   Main.parser23) -}
+95df7598caf1f6c204d88bfbd8a6517c
+  parser23 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser27 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser26
+                        Main.parser24 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+3c54a78977e8da3bc2895c20d8acc88e
+  parser24 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser25 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+7efd379aa14f03a3983c8ec164ae202e
+  parser25 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Y coord of assumed site area center"#) -}
+680fb031e1017b6402df0ed76a19bf20
+  parser26 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'y'#) -}
+d50a2ee2dfcb80dcf34eaed1ba180fd9
+  parser27 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "center_y"#) -}
+26d11eccbdd65ab2a13a8e764afb746d
+  parser28 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ GHC.Types.Double
+                   Main.parser34
+                   Main.parser29) -}
+49c02e3c6923a39e4881b296a0105f0e
+  parser29 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser33 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser32
+                        Main.parser30 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+3b337e0ff45fca8692bcc11ebfe7a65b
+  parser3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Z radius of searching area"#) -}
+ea8b4b2ff066599ba1829289f5acef12
+  parser30 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser31 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+29f135caac54522acf0b26e531dd6a8b
+  parser31 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "X coord of assumed site area center"#) -}
+a2f4c2f500ca27736f75c1332abdbb82
+  parser32 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'x'#) -}
+a3c04fc7045805a9e644f41f6884e49f
+  parser33 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "center_x"#) -}
+5cd191afae912b68d5acca043809a138
+  parser34 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ Data.Text.Internal.Text
+                   Main.parser40
+                   Main.parser35) -}
+0e175755281f97e17dbdbfc610bd31fb
+  parser35 ::
+    Options.Applicative.Types.Parser Data.Text.Internal.Text
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ Data.Text.Internal.Text
+                        (GHC.Base.Just @ Data.Text.Internal.Text)
+                        Main.parser39 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser38
+                        Main.parser36 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP
+                   @ Data.Text.Internal.Text
+                   ww1
+                   ww2 }) -}
+7e7b6bdb3dc371c5ca32c31cbc3d00d9
+  parser36 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser37 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+37cbb4fc450604ea33408bfbeb3827cf
+  parser37 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Path to directory with ligands"#) -}
+0de62deed9c1c3ab341ce05f909811ee
+  parser38 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'l'#) -}
+7cc0a480e5f0a05d6c585f9f1f0d2aca
+  parser39 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "ligands"#) -}
+364b32562cacab0e3e5af46b27f22b43
+  parser4 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'a'#) -}
+5a73020e615196444685007553074e4a
+  parser40 ::
+    Options.Applicative.Types.Parser
+      (Data.Text.Internal.Text
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ Data.Text.Internal.Text
+                        (GHC.Base.Just @ Data.Text.Internal.Text)
+                        Main.parser44 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser43
+                        Main.parser41 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.$fApplicativeParser_$cfmap
+                   @ Data.Text.Internal.Text
+                   @ (Data.Text.Internal.Text
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   (GHC.Tuple.(,,,,,,,)
+                      @ Data.Text.Internal.Text
+                      @ Data.Text.Internal.Text
+                      @ GHC.Types.Double
+                      @ GHC.Types.Double
+                      @ GHC.Types.Double
+                      @ GHC.Types.Double
+                      @ GHC.Types.Double
+                      @ GHC.Types.Double)
+                   (Options.Applicative.Types.AltP
+                      @ Data.Text.Internal.Text
+                      ww1
+                      ww2) }) -}
+bf077f5f8e5f5ed66cd9715e6376d150
+  parser41 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser42 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+273a4c0a0f06ee5978dab06017bbd2e1
+  parser42 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Path to file with receptor"#) -}
+fa573ffcdf2d751f013c04e05f5a300e
+  parser43 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'r'#) -}
+be404b49f0ce90f6c264e39b14777d18
+  parser44 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "receptor"#) -}
+5c1e8512a30db8164524bb94bffb7029
+  parser5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "size_z"#) -}
+93c3c6b02704a379361c07722d779fcd
+  parser6 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Double
+       -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+           GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Double
+                      -> (Data.Text.Internal.Text, Data.Text.Internal.Text,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double,
+                          GHC.Types.Double, GHC.Types.Double, GHC.Types.Double))
+                   @ GHC.Types.Double
+                   Main.parser11
+                   Main.parser7) -}
+b01191212d19b514d13668c353240016
+  parser7 :: Options.Applicative.Types.Parser GHC.Types.Double
+  {- Unfolding: (case Turtle.Options.$wopt
+                        @ GHC.Types.Double
+                        Turtle.Options.argDouble1
+                        Main.parser10 `cast` (Sym (Turtle.Options.N:ArgName[0]))
+                        Main.parser4
+                        Main.parser8 of ww { (#,#) ww1 ww2 ->
+                 Options.Applicative.Types.AltP @ GHC.Types.Double ww1 ww2 }) -}
+b7673ff17c21d1b9c6e54e34202272fe
+  parser8 :: Data.Optional.Optional Turtle.Options.HelpMessage
+  {- Unfolding: (Data.Optional.Specific
+                   @ Turtle.Options.HelpMessage
+                   Main.parser9 `cast` (Sym (Turtle.Options.N:HelpMessage[0]))) -}
+34e155c87be5cd64ec73aa0f6f9cc283
+  parser9 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Y radius of searching area"#) -}
+c8791e654577929f1b0b03a8a2191386
+  welcome :: Turtle.Options.Description
+  {- Strictness: m7,
+     Unfolding: InlineRule (0, True, True)
+                Main.welcome1 `cast` (Sym (Turtle.Options.N:Description[0])) -}
+61eb6cc0250e71b96e0901b375043e6e
+  welcome1 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Strictness: m7,
+     Unfolding: (Text.PrettyPrint.ANSI.Leijen.Cat
+                   Main.welcome7
+                   Main.welcome2) -}
+25edf1cbc6c8010a91b5f3a7443ba432
+  welcome2 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Strictness: m7,
+     Unfolding: (Text.PrettyPrint.ANSI.Leijen.Cat
+                   Main.welcome6
+                   Main.welcome3) -}
+b3d4c61974deac7226ee08cac33aa25e
+  welcome3 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Strictness: m7,
+     Unfolding: (Text.PrettyPrint.ANSI.Leijen.Cat
+                   Main.welcome5
+                   Main.welcome4) -}
+c9bec95e2ee0b4fb82eeb5e8fcb9eada
+  welcome4 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Main.welcome_wild
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Text ww2 Main.welcome_wild }) -}
+c291aad298243cc880e1b3c1ad3e68c4
+  welcome5 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Main.welcome_wild1
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Text ww2 Main.welcome_wild1 }) -}
+c0102f9e18e9042d8c0e7fa89533ab9d
+  welcome6 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Main.welcome_wild2
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Text ww2 Main.welcome_wild2 }) -}
+d9f6a1a8b2b3996abc2db250be8cf27b
+  welcome7 :: Text.PrettyPrint.ANSI.Leijen.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Main.welcome_wild3
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Text ww2 Main.welcome_wild3 }) -}
+5217d8e51d37c9e64cc6330189c18d2c
+  welcome_ipv :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'I'#) -}
+b5d0fc25b42cc6eff8473b7964908bdb
+  welcome_ipv1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "t passes to vina required options only, syntax is similar to vina.\n"#) -}
+b525eae1e7fc3396b2ec634d8911cd57
+  welcome_ipv2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "t assumes vina to be installed in directory listed in system Path.\n"#) -}
+f39ae8de956a553c2d1c105e9534c0be
+  welcome_ipv3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "his script can run AutoDock vina on all .pdbqt files in directory.\n"#) -}
+25592514d904aea65a84e3ca8e1708dc
+  welcome_ipv4 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'T'#) -}
+fb12aea25cf47f3ad0818dff725bd5a0
+  welcome_ipv5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--\n"#) -}
+ebe90bb3475b4fcb4a29cb7333a77d15
+  welcome_ipv6 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '-'#) -}
+cd4560c1cdde0bcb51db716c6ca73048
+  welcome_wild :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.welcome_ipv
+                   Main.welcome_ipv1) -}
+09b1f2ea0798478c6db0cdc9bfc8f483
+  welcome_wild1 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.welcome_ipv
+                   Main.welcome_ipv2) -}
+ae62875f5621178fd807cbeaf1a258d9
+  welcome_wild2 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.welcome_ipv4
+                   Main.welcome_ipv3) -}
+bec6e58bdeaaab92f95b8d4ceb688958
+  welcome_wild3 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.welcome_ipv6
+                   Main.welcome_ipv5) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

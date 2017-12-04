@@ -10,3 +10,8 @@ extra-deps: []
 # Extra package databases containing global packages
 # FIXME: use it.
 extra-package-dbs: []
+
+ghc-options:
+  'vina-utils': -O -Wall -Werror
+  'anychem2dock': -O -Wall -Werror
+  'rescore-vina': -O -Wall -Werror
