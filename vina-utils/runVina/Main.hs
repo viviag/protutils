@@ -4,20 +4,21 @@ module Main where
 import Prelude hiding (FilePath)
 import Turtle
 
-import Data.List (isSuffixOf)
-import Data.Text (Text, pack, unpack)
+import Control.Foldl as Fold hiding (mapM_, fold)
 
-import System.Directory (listDirectory)
+import Filesystem.Path.CurrentOS (encodeString)
 
-parser :: Parser (Text, Text, Double, Double, Double, Double, Double, Double)
+import Data.Text (Text, pack)
+
+parser :: Parser (Text, FilePath, Double, Double, Double, Double, Double, Double)
 parser = (,,,,,,,) <$> optText "receptor" 'r' "Path to file with receptor"
-                   <*> optText "ligands" 'l' "Path to directory with ligands"
+                   <*> opt (Just . fromText) "ligands" 'l' "Path to directory with ligands"
                    <*> optDouble "center_x" 'x' "X coord of assumed site area center"
                    <*> optDouble "center_y" 'y' "Y coord of assumed site area center"
                    <*> optDouble "center_z" 'z' "Z coord of assumed site area center"
                    <*> optDouble "size_x" 'a' "X radius of searching area"
-                   <*> optDouble "size_y" 'a' "Y radius of searching area"
-                   <*> optDouble "size_z" 'a' "Z radius of searching area"
+                   <*> optDouble "size_y" 'b' "Y radius of searching area"
+                   <*> optDouble "size_z" 'c' "Z radius of searching area"
 
 welcome :: Description
 welcome = Description $ "---\n"
@@ -28,13 +29,13 @@ welcome = Description $ "---\n"
 main :: IO ()
 main = do
   (receptor, ligands, x_center, y_center, z_center, x_radius, y_radius, z_radius) <- options welcome parser
-  contents <- listDirectory (unpack ligands)
-  mapM_ (\lig -> stdout $ action receptor lig x_center y_center z_center x_radius y_radius z_radius) (pdbqts contents)
+  files <- fold (lsif (\lig -> return $ extension lig == Just "pdbqt") ligands) Fold.list
+  mapM_ (\lig -> stdout $ action receptor lig x_center y_center z_center x_radius y_radius z_radius) files
+  print $ showt x_center
   where
-    pdbqts contents = map pack $ filter (isSuffixOf ".pdbqt") contents
     action receptor ligand x_center y_center z_center x_size y_size z_size = inproc "vina"
         [ "--receptor", receptor
-        , "--ligand", ligand
+        , "--ligand", pack . encodeString $ ligand
         , "--center_x", showt x_center
         , "--center_y", showt y_center
         , "--center_z", showt z_center
