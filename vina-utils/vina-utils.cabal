@@ -23,6 +23,8 @@ executable runVina
                      , foldl
                      , system-filepath
   default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+                       RecordWildCards
 
 source-repository head
   type:     git

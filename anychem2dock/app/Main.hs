@@ -1,4 +1,3 @@
-{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
 import Prelude hiding (FilePath)
@@ -11,11 +10,16 @@ import Filesystem.Path.CurrentOS (encodeString)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text, pack)
 
-parser :: Parser (FilePath, Maybe FilePath, Bool)
-parser = (,,) <$> opt (Just . fromText) "input" 'i' "Imput directory."
-              <*> optional (opt (Just . fromText) "output" 'o' "Output directory.")
-              <*> switch  "receptor"  'r' "Treat put in files as receptors and use prepare_receptor4."
+parser :: Parser Options
+parser = Options <$> opt (Just . fromText) "input" 'i' "Input directory."
+                 <*> optional (opt (Just . fromText) "output" 'o' "Output directory.")
+                 <*> switch  "receptor"  'r' "Treat put in files as receptors and use prepare_receptor4."
 
+data Options = Options
+  { optInput :: FilePath
+  , optOutput :: Maybe FilePath
+  , optReceptor :: Bool
+  }
 
 welcome :: Description
 welcome = Description $ "---\n"
@@ -51,9 +55,9 @@ convert receptor outputDir molPath = do
 
 main :: IO ()
 main = do
-  (inputDir, outputMaybeDir, receptors) <- options welcome parser
-  files <- fold (lsif ((fmap isRegularFile) . stat) inputDir) Fold.list
-  mktree (outputDir inputDir outputMaybeDir)
-  mapM_ (convert receptors (outputDir inputDir outputMaybeDir)) files
+  Options{..} <- options welcome parser
+  files <- fold (lsif ((fmap isRegularFile) . stat) optInput) Fold.list
+  mktree (outputDir optInput optOutput)
+  mapM_ (convert optReceptor (outputDir optInput optOutput)) files
   where
     outputDir idir odir = (fromMaybe (idir </> fromText "prepared") odir)
