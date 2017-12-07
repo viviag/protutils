@@ -1,0 +1,25 @@
+module PDBQT where
+
+import Prelude hiding (FilePath, words)
+
+import Data.Text (unpack, isInfixOf, words)
+import Data.Vector (Vector, fromList)
+
+import Turtle
+
+import Types
+
+getVinaScores :: [Text] -> Vector VinaRecord
+getVinaScores contents = do
+  fromList $ cons ids scores
+  where
+    -- extract from where.
+    cons :: [Int] -> [Double] -> [VinaRecord]
+    cons [] _ = []
+    cons _ [] = []
+    cons (m : ms) (sc : scs) = VinaRecord m sc : cons ms scs -- FIXME: avoid direct recursion.
+    ids :: [Int]
+    ids = extractionF 1 "MODEL"
+    scores :: [Double]
+    scores = extractionF 3 "VINA RESULT"
+    extractionF index grepper = map (\lt -> read $ unpack $ lt !! index) $ map words $ filter (isInfixOf grepper) contents

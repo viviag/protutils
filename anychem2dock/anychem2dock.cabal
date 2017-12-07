@@ -28,4 +28,4 @@ executable anychem2dock
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/protutils
+  location: https://github.com/viviag/protutils

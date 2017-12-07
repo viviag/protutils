@@ -15,9 +15,24 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     PDBQT
+                       Options
+                       Utils
+                       TSV
+                       Types
+                       Report.IO
+                       Report.Pure
   build-depends:       base >= 4.7 && < 5
+                     , cassava
+                     , turtle
+                     , text
+                     , bytestring
+                     , vector
+                     , foldl
+                     , system-filepath
   default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+                       RecordWildCards
 
 executable rescore-vina
   hs-source-dirs:      app
@@ -25,8 +40,15 @@ executable rescore-vina
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , rescore-vina
+                     , turtle
+                     , foldl
+                     , system-filepath
+                     , text
   default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+                       RecordWildCards
+                       TypeApplications
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/protutils
+  location: https://github.com/viviag/protutils

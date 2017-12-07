@@ -1,0 +1,1 @@
+module Report.Pure where
