@@ -7,10 +7,6 @@ packages:
 
 extra-deps: []
 
-# Extra package databases containing global packages
-# FIXME: use it.
-extra-package-dbs: []
-
 ghc-options:
   '$locals': -Wall -Werror
   'rescore-vina': -Wno-orphans
