@@ -40,8 +40,10 @@ main = do
     ) correctFiles
 
   -- It's algorithm downshifting. I'm using sort on formed list instead sorting in stream. FIXME
-  mapM_ (append (outputFile optReceptor optOutputDir "tsv")) (map (return . unsafeTextToLine . tsvEntry) $ reverse . sort $ unsortedRecords)
+  mapM_ (append (outputFile optReceptor optOutputDir "tsv")) (map toTsvOutput $ sortDesc unsortedRecords)
 
   where
+    sortDesc = reverse . sort
+    toTsvOutput = return . unsafeTextToLine . tsvEntry
     listFiles dir = fold (lsif ((fmap isRegularFile) . stat) dir) Fold.list
     names = ["Ligand id", "vina_maximum", "score", "rf-score_old_max", "score", "vina_new_max", "score", "rf-score_maximum", "score"]
