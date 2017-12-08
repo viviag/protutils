@@ -44,5 +44,4 @@ main = do
 
   where
     listFiles dir = fold (lsif ((fmap isRegularFile) . stat) dir) Fold.list
-    outputFile path outputDir ext = outputDir </> basename path <.> ext
     names = ["Ligand id", "vina_maximum", "score", "rf-score_old_max", "score", "vina_new_max", "score", "rf-score_maximum", "score"]

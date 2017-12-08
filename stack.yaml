@@ -12,6 +12,5 @@ extra-deps: []
 extra-package-dbs: []
 
 ghc-options:
-  'vina-utils': -O -Wall -Werror
-  'anychem2dock': -O -Wall -Werror
-  'rescore-vina': -O -Wall -Werror -Wno-orphans
+  '$locals': -Wall -Werror
+  'rescore-vina': -Wno-orphans

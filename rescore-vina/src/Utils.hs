@@ -3,7 +3,8 @@ module Utils where
 import Prelude hiding (FilePath)
 
 import Data.Text (pack, Text)
-import Filesystem.Path.CurrentOS (FilePath, encodeString)
+import Filesystem.Path.CurrentOS (encodeString)
+import Filesystem.Path
 
 showt :: Show a => a -> Text
 showt = pack . show
@@ -22,3 +23,6 @@ fromJustCustom Nothing msg = error msg
 
 showPath :: FilePath -> Text
 showPath = pack . encodeString
+
+outputFile :: FilePath -> FilePath -> Text -> FilePath
+outputFile path outputDir ext = outputDir </> basename path <.> ext
