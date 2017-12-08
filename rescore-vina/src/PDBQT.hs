@@ -15,7 +15,7 @@ getVinaScores contents = fromList $ cons (ids contents) (scores contents)
 cons :: [Int] -> [Double] -> [VinaRecord]
 cons [] _ = []
 cons _ [] = []
-cons (m : ms) (sc : scs) = VinaRecord m sc : cons ms scs -- FIXME: avoid direct recursion.
+cons models vinaScores = zipWith VinaRecord models vinaScores
 
 ids :: [Text] -> [Int]
 ids = extractionF 1 "MODEL"
