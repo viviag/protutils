@@ -1,4 +1,7 @@
+{-# LANGUAGE DeriveDataTypeable #-}
 module Types where
+
+import Data.Data
 
 import Data.Csv
 import Data.Text (intercalate)
@@ -53,7 +56,7 @@ data ReportEntry = ReportEntry
   , reportEntryVinaNewScore :: Double
   , reportEntryRfMax :: Int
   , reportEntryRfScore :: Double
-  }
+  } deriving Data
 
 instance Eq ReportEntry where
   first == second = reportEntryVinaMax first == reportEntryVinaMax second
@@ -62,6 +65,7 @@ instance Ord ReportEntry where
   compare first second = compare (reportEntryVinaMax first) (reportEntryVinaMax second)
 
 instance ToTSV ReportEntry where
+  -- FIXME: here user of TSV lib must manually preserve ordering of fields to match header.
   tsvEntry ReportEntry{..} =  intercalate "\t" [ reportEntryLigandId
                                                , showt reportEntryVinaMax
                                                , showt reportEntryVinaScore

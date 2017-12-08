@@ -31,7 +31,7 @@ main = do
 
   correctFiles <- listFiles optInput
 
-  append (outputFile optReceptor optOutputDir "tsv") (return $ unsafeTextToLine (tsvHeader (Proxy @ReportEntry) names))
+  append (outputFile optReceptor optOutputDir "tsv") (return $ unsafeTextToLine (tsvHeader (Proxy @ReportEntry)))
   
   unsortedRecords <- mapM (\lig -> do
     printf (fp%"\n") (basename lig)
@@ -46,4 +46,3 @@ main = do
     sortDesc = reverse . sort
     toTsvOutput = return . unsafeTextToLine . tsvEntry
     listFiles dir = fold (lsif ((fmap isRegularFile) . stat) dir) Fold.list
-    names = ["Ligand id", "vina_maximum", "score", "rf-score_old_max", "score", "vina_new_max", "score", "rf-score_maximum", "score"]
