@@ -1,6 +1,6 @@
 ### rescore-vina
 
-This package takes (vina)[http://vina.scripps.edu] output, rescores it with (rf-score-vs)[https://github.com/oddt/rfscorevs_binary] and produce simple `.tsv` report.
+This package takes [vina](http://vina.scripps.edu) output, rescores it with [rf-score-vs](https://github.com/oddt/rfscorevs_binary) and produce simple `.tsv` report.
 
 Requires vina and rf-score-vs installed in `Path`.
 
