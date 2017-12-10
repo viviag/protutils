@@ -2,7 +2,6 @@
 Protein utilities
 
 These are differently conjuncted tools for docking procedure automation.
-They are written under Linux and for Linux. With Turtle I will be able to support Windows automatically but not for now.
 
  ### Members:
  * Peter Vlasov, PhD, IST Austria, SMTB Alumni - supervising, usability, biological sense.
