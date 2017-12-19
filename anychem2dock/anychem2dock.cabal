@@ -1,5 +1,5 @@
 name:                anychem2dock
-version:             0.1
+version:             1.0
 synopsis:            Tool to prepare ligand or receptor in any supported by openbabel format for docking.
 description:         Please see README.md
 homepage:            https://github.com/viviag/protutils#readme

@@ -1,5 +1,5 @@
 name:                rescore-vina
-version:             0.1
+version:             1.0
 synopsis:            Tool to rescore vina results with rf-score-vs and report on it.
 description:         Please see README.md
 homepage:            https://github.com/viviag/protutils#readme
