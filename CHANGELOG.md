@@ -2,7 +2,7 @@
 ---
 
 * App basics:
-  - Bump versions (see [`357451c`](https://github.com/viviag/protutils/commit/357451c));
+  - Bump versions (see [`1489f0a`](https://github.com/viviag/protutils/commit/357451c));
   - Add binaries to repo (see [`54c63ff`](https://github.com/viviag/protutils/commit/54c63ff));
   - Update READMEs (see [`ccebd13`](https://github.com/viviag/protutils/commit/ccebd13));
   - Remove commented section in stack.yaml (see [`8e93ed0`](https://github.com/viviag/protutils/commit/8e93ed0));
