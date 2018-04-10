@@ -5,7 +5,7 @@ import Turtle
 
 import qualified Control.Foldl as Fold
 
-import Filesystem.Path.CurrentOS (encodeString)
+import Filesystem.Path.CurrentOS (encodeString, (</>))
 
 import Data.Text (Text, pack)
 
@@ -40,9 +40,12 @@ main :: IO ()
 main = do
   Options{..} <- options welcome parser
   files <- fold (lsif (\lig -> return $ extension lig == Just "pdbqt") optLigands) Fold.list
-  mapM_ (\lig -> stdout $ action optReceptor lig optX optY optZ optXSide optYSide optZSide) files
+  flag <- testdir "outdated"
+  if flag then return () else mkdir "outdated"
+  mapM_ (\lig -> action optReceptor lig optX optY optZ optXSide optYSide optZSide) files
   where
-    action receptor ligand x_center y_center z_center x_size y_size z_size = inproc "vina"
+    action receptor ligand x_center y_center z_center x_size y_size z_size = do
+      stdout $ inproc "vina"
         [ "--receptor", receptor
         , "--ligand", pack . encodeString $ ligand
         , "--center_x", showt x_center
@@ -52,4 +55,5 @@ main = do
         , "--size_y", showt y_size
         , "--size_z", showt z_size
         ] empty
+      mv ligand ("outdated" </> filename ligand)
     showt = pack . show
