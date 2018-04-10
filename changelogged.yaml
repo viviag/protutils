@@ -1,0 +1,5 @@
+versioned:
+  main:
+  - ["vina-utils/vina-utils.cabal", "version"]
+  - ["rescore-vina/rescore-vina.cabal", "version"]
+  - ["anychem2dock/anychem2dock.cabal", "version"]
